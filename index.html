@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div id="container">
+            <div id="logo">
+                <img id="logoimg" alt="logo" src="images/icons/download.png">
+
+            </div>
+
+            <ul id="headul">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">OUR SERVICES</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+
+            </ul>
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+</header>
+
+<!-- here begins the slideshow of picture -->
+<div class="slideshow-container">
+    <div class="Containers">
+        <img src="images/home/plane.jpg" style="width:100%; height: 600px">
+        <div class="plane-head">
+            <h2>BEST TRAVEL AGENCY</h2>
+            <p>For the past 15 years we have been ranked as one of the best travel agencies in the world</p>
+            <a href="contact.html"><button class="images-button">CONTACT US</button></a>
+        </div>
+    </div>
+    <div class="Containers">
+        <img src="images/home/cove.jpg" style="width:100%; height: 600px">
+        <div class="cove-head">
+            <h2>INTERNATIONAL SERVICE</h2>
+            <p>We will make sure you get what you need anywhere in the world and at any time</p>
+            <a href="contact.html"><button class="images-button">CONTACT US</button></a>
+        </div>
+        </div>
+    <div class="Containers">
+        <img src="images/home/train.jpg" style="width:100%; height: 600px">
+        <div class="train-head">
+            <h2>GLOBAL TRAVEL PARTNERS</h2>
+            <p>With our partners everywhere in the world we can assure you will get the best trip of your life</p>
+            <a href="contact.html"><button class="images-button">CONTACT US</button></a>
+        </div>
+    </div>
+
+
+    <a class="Back" onclick="plusSlides(-1)"> < </a>
+    <a class="forward" onclick="plusSlides(1)"> > </a>
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
+</div>
+
+<!-- main part of Home page -->
+<div id="stuff">
+        <div>
+            <i class="fas fa-star" style='font-size: 36px; color: #00acc1'></i>
+            <h3>5 STAR SERVICES</h3>
+            <span>As one of the highest rated travel agency we tend to keep up our good reputation by providing our customers only with the best service</span>
+        </div>
+
+        <div>
+            <i class="fas fa-suitcase" style='font-size: 36px; color: #00acc1'></i>
+            <h3>DESIGN TRAVEL PLAN</h3>
+            <span>With us you can go on a trip anywhere in the world. Just tell us your wishes and we will make them come true</span>
+        </div>
+        <div>
+            <i class='fas fa-plane' style='font-size:36px; color: #00acc1'></i>
+            <h3>FLIGHT BOOKING</h3>
+            <span>We always choose the best flights and always notify our customers whenever something comes up with their flight. Even if it's last minute!</span>
+        </div>
+    </div>
+<!-- three images at the center -->
+    <div id="three-img">
+        <img src="images/home/gurl.jpeg" alt="girl">
+        <img src="images/home/tibet.jpeg" alt="tibet">
+        <img src="images/home/egypt.jpeg" alt="sphynx">
+    </div>
+
+<!-- bottom part of the page -->
+    <div id="service">
+        <i class='fas fa-plane-departure' style='font-size:36px; color: #00acc1'></i>
+        <h2>OUR SERVICES</h2>
+        <span>With us you can visit the many wonders of the present and the past world and explore the magnificent power of mother nature with our professional tour guides</span>
+    </div>
+
+    <div id="mid-img" onclick="myFunction()">
+        <img src="images/home/water.jpeg" alt="">
+        <img src="images/home/hotel.jpeg" alt="">
+        <img src="images/home/mountain.jpeg" alt="">
+        </div>
+
+
+    <div class="contact-form">
+        <div id="map"></div>
+        <div class="form">
+            <i class="fas fa-phone-alt" style='font-size: 36px; color: #00acc1'></i>
+            <h2>SEND US A MESSAGE</h2>
+            <p>Have a question? Leave in the form below and we will answer it in a short notice.</p>
+            <form name="form" onsubmit="return formValidation()">
+                <input id="iname" type="text" placeholder="Name*" name="name">
+                <input id="imail" type="email" placeholder="Email*" name="mail">
+                <input type="text" placeholder="Subject" name="subject">
+                <br>
+                <textarea id="itxt" cols="45" rows="5" placeholder="Your Message*" name="txtbox"></textarea>
+                <br>
+                <input type="submit" placeholder="Submit">
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTcrWym-tOvMf4PiKtQa2MqHVuJEXHZ6U&callback=initMap&libraries=&v=weekly"
+        async
+></script>
+
+<div id="foot"></div>
+
+
+    <footer>
+        <div>
+            <ul>
+                <li><a href="#">FACEBOOK</a></li>
+                <li><a href="#">TWITTER</a></li>
+                <li><a href="#">INSTAGRAM</a></li>
+                <li><a href="#">PINTEREST</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

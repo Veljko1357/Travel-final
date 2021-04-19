@@ -1,0 +1,452 @@
+
+body{
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    overflow-x: hidden;
+   margin: 0;
+
+}
+
+
+header{
+    position: sticky;
+    height: 50px;
+    padding:0;
+    top: 0;
+   border-bottom: 0.5px solid grey;
+    background-color: white;
+}
+
+#logo{
+    display: block;
+    float: left;
+    text-align: left;
+    padding: 0;
+}
+
+#logoimg{
+    width: 103px;
+    display: inline-block;
+    padding-left: 442px;
+}
+
+ul {
+ float: none;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding-top: 12px;
+    padding-left: 250px;
+}
+
+#headul li:last-child{
+    padding-right: 650px;
+}
+
+#headul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+#container button {
+    position: absolute;
+    cursor: pointer;
+}
+
+#container i {
+    position: absolute;
+    margin-left: 1440px;
+    margin-top: -34px;
+    cursor: pointer;
+}
+/* home page */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+
+}
+
+
+.Containers {
+    display: none;
+}
+
+.plane-head {
+    top: 35%;
+    left: 33%;
+    text-align: center;
+    position: absolute;
+    color: white;
+}
+
+.cove-head {
+    position: absolute;
+    top: 35%;
+    text-align: right;
+    right: 100px;
+    color: white;
+}
+
+.train-head {
+    position: absolute;
+    top: 35%;
+    text-align: left;
+    color: white;
+    left: 100px;
+}
+
+.images-button {
+    background-color: #33e1ff;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+
+.Back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+.dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #00acc1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+    background-color: aquamarine;
+}
+
+#stuff {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1194px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+#stuff div{
+    width: 280px;
+}
+
+#three-img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#threeimg img{
+left: 0;
+}
+
+#service {
+    width: 540px;
+    text-align: center;
+    margin:0 auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+#mid-img{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1194px;
+    margin: 0 auto;
+    padding-bottom: 350px;
+}
+
+.contact-form {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: absolute;
+    background-color: #f0f0f0;
+    margin-left: 471px;
+    margin-top: -278px;
+}
+
+#map{
+    width: 50%;
+    height: 100%;
+
+}
+
+.form {
+    text-align: center;
+    height: 300px;
+    flex: 40%;
+    padding-top: 50px;
+    position: relative;
+
+}
+
+
+
+.form h2 {
+    margin-bottom: 10px;
+}
+
+.form form {
+
+}
+
+.form form input {
+    width: 90px;
+    height: 25px;
+    border: 1px solid lightgray;
+
+    margin-right: 20px;
+}
+
+.form form input:last-child{
+    background-color: #33e1ff;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.form form textarea {
+    margin-left: -17px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+}
+
+
+
+
+#foot {
+    background-image: url("../images/home/bahamas.jpg");
+    height: 300px;
+    padding: 0;
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color:black;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    margin-left: 105px;
+    gap: 170px;
+    max-width: 1080px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* contact page*/
+
+.grey-top {
+    background-color: #ececec;
+    height: 135px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.grey-top h2{
+    padding-top: 50px;
+}
+
+#contact-info {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 600px;
+    margin-top: 200px;
+}
+
+#contact-info div {
+    width: 500px;
+}
+
+/*about us page */
+
+.about-main {
+    margin-left: 445px;
+    width: 1000px;
+    margin-top: 110px;
+    clear: both;
+    overflow: hidden;
+}
+
+.about-main img {
+    width: 500px;
+    float: left;
+}
+
+.about-text {
+    margin-left: 542px;
+    padding-top: 66px;
+}
+
+#bg-img {
+    background-image: url("../images/about/consult.jpg");
+    background-size: 100% 491px;
+    height: 350px;
+    background-position: 0 -141px;
+    margin-top: 106px;
+    margin-bottom: 200px;
+}
+
+#about-bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 400px;
+    margin-left: -47px;
+    gap: 24px;
+}
+
+#about-bottom div {
+    padding: 50px;
+    background-color: #f4f4f4;
+    width: 208px;
+    height: 208px;
+}
+
+
+/* our services page */
+
+#service-img {
+    margin-left: 442.5px;
+    margin-top: 75px;
+}
+
+#service-img img{
+    height: 510px;
+}
+
+
+#service-bottom {
+   display: flex;
+    margin-left: 432px;
+    gap: 56.5px;
+    justify-content: left;
+    width: 1096px;
+    padding-bottom: 100px;
+    padding-top: 80px;
+}
+
+#service-bottom div {
+    background-color: #f4f4f4;
+    width: 250px;
+    height: 220px;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#service-bottom div h4 {
+    padding-top: 15px;
+}
+
+#bg-img-two {
+    background-color: #ececec;
+    background-image: url("../images/service/canyon.jpg");
+    background-size: 100% 491px;
+    height: 350px;
+}
+
+#service-travel {
+    text-align: center;
+    margin: 0 auto;
+    width: 530px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+
+#service-images {
+    display: flex;
+    margin-left: 432px;
+    gap: 56.5px;
+    justify-content: left;
+    width: 1096px;
+
+}
+
+#service-images img {
+    background-color: #ececec;
+    width: 290px;
+    height: 260px;
+    margin: 10px;
+}
+
+#images-text {
+    display: flex;
+    margin-left: 432px;
+    gap: 56.5px;
+    justify-content: left;
+    width: 1096px;
+    margin-bottom: 335px;
+}
+
+#images-text div {
+    width: 290px;
+    height: 260px;
+    margin: 10px;
+
+}
+
+#images-text div button {
+    background-color: #33e1ff;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
